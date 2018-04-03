@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        font-size: 125%;
+      }
+
+      body {
+        background-color: #f7f7f7;
+        color: #646464;
+        font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+        font-size: 75%;
+        padding: 0 10%;
+      }
+
+      .spiral {
+        position: fixed;
+        top: 13px;
+        left: 14px;
+        width: 110px;
+        height: 110px;
+      }
+
+      .quote {
+        max-width: 600px;
+        margin: 205px auto 0;
+        display: none;
+      }
+
+      .quote__text {
+        margin: 0 0 20px 0;
+        text-indent: -0.35em;
+        color: #333;
+        font-size: 1.6em;
+        font-weight: normal;
+        line-height: 1.25em;
+        margin-bottom: 16px;
+      }
+
+      .quote__article-title {
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        font-size: 0.8em;
+      }
+
+      .quote__article-url {
+        text-decoration: none;
+        color: #646464;
+        font-size: 0.8em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+
+      .quote__article-url:hover {
+        color: #333;
+      }
+
+      .quote--loaded {
+        display: block
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://thecreativeindependent.com" target="_blank">
+      <svg id="Layer_1" class="spiral" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #535353;
+            }
+          </style>
+        </defs>
+        <title>Artboard 1</title>
+        <polygon class="cls-1" points="12.01 37.98 12.01 33.98 16 33.98 16 29.99 12.01 29.99 12.01 33.98 8.01 33.98 8.01 37.98 8.01 41.98 12.01 41.98 12.01 37.98"/>
+        <polygon class="cls-1" points="35.99 109.99 31.99 109.99 31.99 113.99 35.99 113.99 39.98 113.99 43.98 113.99 43.98 109.99 39.98 109.99 35.99 109.99"/>
+        <rect class="cls-1" x="24" y="17.98" width="4" height="4"/>
+        <polygon class="cls-1" points="4 41.99 4 45.99 4 49.99 0 49.99 0 53.98 0 58 0 62 0 65.99 0 69.99 0 73.99 0 77.98 4 77.98 4 73.99 4 69.99 4 65.99 4 62 4 58 4 53.98 4 49.99 7.99 49.99 7.99 45.99 7.99 41.99 4 41.99"/>
+        <rect class="cls-1" x="16" y="25.99" width="4" height="4"/>
+        <rect class="cls-1" x="20" y="21.99" width="4" height="4"/>
+        <polygon class="cls-1" points="7.99 85.99 7.99 82 7.99 78 4 78 4 82 4 85.99 4 89.99 7.99 89.99 7.99 85.99"/>
+        <polygon class="cls-1" points="27.99 106 24 106 24 109.99 27.99 109.99 31.99 109.99 31.99 106 27.99 106"/>
+        <rect class="cls-1" x="20" y="102" width="4" height="4"/>
+        <rect class="cls-1" x="11.99" y="94.01" width="4" height="4"/>
+        <rect class="cls-1" x="15.98" y="98" width="4" height="4"/>
+        <rect class="cls-1" x="7.99" y="89.99" width="4" height="4"/>
+        <polygon class="cls-1" points="48.01 5.99 48.01 9.98 52.01 9.98 56.01 9.98 60 9.98 64 9.98 68 9.98 71.99 9.98 71.99 5.99 48.01 5.99"/>
+        <polygon class="cls-1" points="56.01 45.99 60 45.99 64 45.99 68 45.99 71.99 45.99 71.99 42 68 42 64 42 60 42 56.01 42 52.01 42 48.01 42 48.01 45.99 52.01 45.99 56.01 45.99"/>
+        <polygon class="cls-1" points="80 13.98 84 13.98 84 9.99 80 9.99 76.01 9.99 72.01 9.99 72.01 13.98 76.01 13.98 80 13.98"/>
+        <polygon class="cls-1" points="56.01 73.99 56.01 77.98 60 77.98 60 73.99 60 69.99 56.01 69.99 56.01 73.99"/>
+        <path class="cls-1" d="M80,50V46H72v4h8Zm0,4h4V50H80Z"/>
+        <polygon class="cls-1" points="44 13.98 47.99 13.98 47.99 9.99 44 9.99 40 9.99 36.01 9.99 36.01 13.98 40 13.98 44 13.98"/>
+        <rect class="cls-1" x="40" y="73.99" width="4" height="4"/>
+        <polygon class="cls-1" points="35.99 17.98 35.99 13.98 31.99 13.98 27.99 13.98 27.99 17.98 31.99 17.98 35.99 17.98"/>
+        <polygon class="cls-1" points="40 69.99 40 65.99 40 62 40 58 40 54 36.01 54 36.01 58 36.01 62 36.01 65.99 36.01 69.99 36.01 73.98 40 73.98 40 69.99"/>
+        <rect class="cls-1" x="44" y="45.99" width="4" height="4"/>
+        <rect class="cls-1" x="40" y="49.99" width="4" height="4"/>
+        <polygon class="cls-1" points="47.99 78 44 78 44 82 47.99 82 51.99 82 55.99 82 55.99 78 51.99 78 47.99 78"/>
+        <polygon class="cls-1" points="112.02 113.99 112.02 117.98 116.01 117.98 116.01 114.01 116.01 109.99 112.02 109.99 112.02 113.99"/>
+        <rect class="cls-1" x="108.02" y="118" width="4" height="4"/>
+        <polygon class="cls-1" points="116.01 34 112.02 34 112.02 38 112.02 41.99 116.01 41.99 116.01 38 116.01 34"/>
+        <rect class="cls-1" x="104" y="25.99" width="4" height="4"/>
+        <rect class="cls-1" x="108" y="29.99" width="4" height="4"/>
+        <polygon class="cls-1" points="120.01 54 120.01 58 120.01 62 124 62 124 58 124 54 124 50.01 120.01 50.01 120.01 54"/>
+        <polygon class="cls-1" points="124 62.02 124 66.01 124 70.01 124 74 124 78 124 82 124 85.99 124 89.99 128 89.99 128 62.02 124 62.02"/>
+        <polygon class="cls-1" points="96.01 18 92.01 18 92.01 21.99 96.01 21.99 100.01 21.99 100.01 18 96.01 18"/>
+        <polygon class="cls-1" points="116.01 49.99 120.01 49.99 120.01 45.99 120.01 41.99 116.01 41.99 116.01 45.99 116.01 49.99"/>
+        <polygon class="cls-1" points="47.99 114.01 44 114.01 44 118 47.99 118 51.99 118 55.99 118 55.99 114.01 51.99 114.01 47.99 114.01"/>
+        <polygon class="cls-1" points="120.01 94.01 120.01 98 120.01 102 124 102 124 98 124 94.01 124 90.01 120.01 90.01 120.01 94.01"/>
+        <polygon class="cls-1" points="116.01 106 116.01 109.99 120.01 109.99 120.01 106 120.01 102 116.01 102 116.01 106"/>
+        <rect class="cls-1" x="100.01" y="21.99" width="4" height="4"/>
+        <polygon class="cls-1" points="68 106 68 109.99 71.99 109.99 75.99 109.99 75.99 106 71.99 106 68 106"/>
+        <rect class="cls-1" x="76.01" y="102" width="4" height="4"/>
+        <rect class="cls-1" x="51.99" y="65.99" width="4" height="4"/>
+        <polygon class="cls-1" points="60 109.99 56.01 109.99 56.01 113.99 60 113.99 64 113.99 68 113.99 68 109.99 64 109.99 60 109.99"/>
+        <rect class="cls-1" x="80" y="98" width="4" height="4"/>
+        <polygon class="cls-1" points="88 66.01 88 70.01 88 74 88 78 88 82 88 85.99 88 89.99 91.99 89.99 91.99 85.99 91.99 82 91.99 78 91.99 74 91.99 70.01 91.99 66.01 91.99 62.02 88 62.02 88 66.01"/>
+        <polygon class="cls-1" points="84 13.98 84 17.98 88 17.98 91.99 17.98 91.99 13.98 88 13.98 84 13.98"/>
+        <polygon class="cls-1" points="84 58 84 62 88 62 88 58 88 54 84 54 84 58"/>
+        <polygon class="cls-1" points="84 94.01 84 98 88 98 88 94.01 88 90.01 84 90.01 84 94.01"/>
+      </svg>
+    </a>
+
+    <div class="quote">
+      <blockquote class="quote__text">
+
+      </blockquote>
+
+      <h1 class="quote__article-title"></h1>
+
+      <a class="quote__article-url"></a>
+    </div>
+
+    <script type="text/javascript" src="fallback_quotes.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+
+</html>
