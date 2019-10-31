@@ -37,4 +37,23 @@
   .catch(function (err) {
     Quote.injector(window.fallbackData);
   });
+  
+  // Night Mode
+  (function () {
+    date = new Date;
+    hours = date.getHours();
+
+    if (hours <= 5 || hours >= 19) {
+      var body = document.querySelector('body');
+      var spiral = document.querySelectorAll('.cls-1');
+      var quote = document.querySelector('.quote__text');
+
+      body.classList.add('night-bg');
+      quote.classList.add('night-quote');
+
+      spiral.forEach(function(pixel) {
+        pixel.classList.add('night-spiral');
+      });
+    }
+  })();
 })();
