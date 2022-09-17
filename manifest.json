@@ -1,29 +1,29 @@
 {
-   "manifest_version":2,
-   "name":"The Creative Independent’s Extension",
-   "version":"1.1",
-   "chrome_url_overrides":{
-      "newtab":"index.html"
+   "manifest_version": 3,
+   "name": "The Creative Independent’s Extension",
+   "version": "2.0.0",
+   "default_locale": "en",
+   "description": "Displays a quote from The Creative Independent on your new tab.",
+   "icons": {
+      "16": "./icons/tci-chrome-16.png",
+      "48": "./icons/tci-chrome-48.png",
+      "128": "./icons/tci-chrome-128.png"
    },
-   "icons":{
-      "16":"./icons/tci-chrome-16.png",
-      "48":"./icons/tci-chrome-48.png",
-      "128":"./icons/tci-chrome-128.png"
+   "chrome_url_overrides": {
+      "newtab": "index.html"
    },
-   "permissions":[
-      "tabs",
-      "http://localhost:4000/",
-      "http://tci-devsite.s3-website-us-east-1.amazonaws.com/",
-      "https://thecreativeindependent.com/"
+   "permissions": [
+      "activeTab"
    ],
-   "content_scripts":[
+   "host_permissions": [
+      "https://thecreativeindependent.com/api/*"
+   ],
+   "content_scripts": [
       {
-         "matches":[
-            "http://localhost:4000/",
-            "http://tci-devsite.s3-website-us-east-1.amazonaws.com/",
-            "https://thecreativeindependent.com/"
+         "matches": [
+            "https://thecreativeindependent.com/api/*"
          ],
-         "js":[
+         "js": [
             "app.js"
          ]
       }
