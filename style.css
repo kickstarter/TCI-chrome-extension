@@ -78,14 +78,10 @@ a#quote__article-title:hover {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000000;
-    color: #4e4e4e;
+    color: #cdcdcda6;
   }
 
   #spiral {
-    fill: #4e4e4e;
-  }
-
-  #quote__text {
-    color: #cdcdcda6;
+    fill: #cdcdcda6;
   }
 }
