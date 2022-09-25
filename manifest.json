@@ -1,8 +1,7 @@
 {
    "manifest_version": 3,
    "name": "The Creative Independent’s Extension",
-   "version": "2.0.0",
-   "default_locale": "en",
+   "version": "2.0.1",
    "description": "Displays a quote from The Creative Independent on your new tab.",
    "icons": {
       "16": "./icons/tci-chrome-16.png",
@@ -12,9 +11,6 @@
    "chrome_url_overrides": {
       "newtab": "index.html"
    },
-   "permissions": [
-      "activeTab"
-   ],
    "host_permissions": [
       "https://thecreativeindependent.com/api/*"
    ],

@@ -1,6 +1,10 @@
 # Changelog
 
-## [2.0.0] - 2022-09-17
+## [2.0.1] - 2022-09-25
+
+- Update manifest.js
+
+## [2.0.1] - 2022-09-17
 
 - Rewrite JS.
 - Update quotes API URL.
